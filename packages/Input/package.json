@@ -1,6 +1,6 @@
 {
   "name": "vitis-lowcode-input",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "这是一个输入框",
   "scripts": {
     "start": "dumi dev",

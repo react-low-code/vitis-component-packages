@@ -27,7 +27,7 @@ export default function (props: Props) {
         }
     }
 
-    return <div>
+    return <div className={style.vitisInput}>
             {props.label && <span className={style.label}>{props.label}</span>}
             <input value={props.value} onInput={onInput}/>
     </div>
