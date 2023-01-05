@@ -33,7 +33,7 @@ interface Props {
      options: {value: string; label: string}[] | DataSource
 }
 
-export default function Select(props: Props) {
+export default React.forwardRef(function Select(props: Props, ref: React.ForwardedRef<HTMLDivElement>) {
     const [options, setOptions] = useState<{value: string; label: string}[]>([])
 
     const onChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -48,10 +48,10 @@ export default function Select(props: Props) {
         }
     },[])
 
-    return <div className={styles.vitisSelect}>
+    return <div className={styles.vitisSelect} ref={ref}>
         {props.label && <span className={styles.label}>{props.label}</span>}
         <select value={props.value} onChange={onChange}>
             {options.map(item => <option value={item.value} label={item.label}/>)}
         </select>
     </div>
-}
+})
