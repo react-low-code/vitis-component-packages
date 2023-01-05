@@ -1,10 +1,8 @@
 {
   "name": "vitis-lowcode-layoutcellsingle",
-  "version": "1.1.0",
-  "description": "这是一个一栏布局组件",
+  "version": "2.0.0",
+  "description": "这是一个一栏布局模版，它包含一个行组件和一个列组件",
   "scripts": {
-    "start": "dumi dev",
-    "genAsset": "node scripts/genAsset.mjs",
     "prepublishOnly": "node scripts/build.mjs",
     "postpublish": "node scripts/upload.mjs"
   },
@@ -57,12 +55,10 @@
   "license": "ISC",
   "componentConfig": {
     "name": "LayoutCellSingle",
-    "title": "一栏",
+    "title": "一行一栏",
     "iconUrl": "https://unpkg.com/vitis-lowcode-layoutcellsingle@latest/img/icon.png"
   },
   "files": [
-    "dist",
-    "docs",
     "asset",
     "img"
   ]
